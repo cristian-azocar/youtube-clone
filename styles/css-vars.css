@@ -1,0 +1,23 @@
+:root {
+  --background-primary: #fff;
+  --general-background: #fff;
+  --text-primary: #000;
+  --input-background: #fff;
+  --input-border: #000;
+  --search-button-background: #fff;
+  --icon-color: #030303;
+}
+
+body[theme='dark'] {
+  --background-primary: rgba(33, 33, 33, 0.98);
+  --general-background: #181818;
+  --text-primary: #fff;
+  --input-background: hsl(0, 0%, 7%);
+  --input-border: hsl(0, 0%, 18.82%);
+  --search-button-background: hsla(0, 0%, 100%, 0.08);
+  --icon-color: rgba(255, 255, 255, 1);
+}
+
+.material-icons, .material-icons-outlined {
+  color: var(--icon-color);
+}

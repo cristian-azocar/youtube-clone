@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/css-vars.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>YouTube Clone</title>
+</head>
+<body theme="dark">
+  <nav class="header">
+    <div class="header-left flex-center">
+      <button class="icon-button">
+        <span class="material-icons-outlined">menu</span>
+      </button>
+      <a href="/" class="logo-container flex-center">
+        <img src="images/logo.svg" alt="Logo" class="logo">
+      </a>
+    </div>
+    <div class="header-middle flex-center">
+      <form id="search-form" action="/search">
+        <input type="text" name="q" id="search" placeholder="Search" autocomplete="off">
+        <button id="search-button" class="flex-center" type="submit">
+          <span class="material-icons-outlined">search</span>
+        </button>
+      </form>
+      <button id="voice-search-button" class="icon-button">
+        <span class="material-icons-outlined">mic</span>
+      </button>
+    </div>
+    <div class="header-right flex-center">
+      <button class="icon-button">
+        <span class="material-icons-outlined">video_call</span>
+      </button>
+      <button class="icon-button">
+        <span class="material-icons-outlined">apps</span>
+      </button>
+      <button class="icon-button">
+        <span class="material-icons-outlined">notifications</span>
+      </button>
+      <img src="https://i.pravatar.cc/32" alt="Avatar" class="user-avatar" width="32" height="32">
+    </div>
+  </nav>
+</body>
+</html>
