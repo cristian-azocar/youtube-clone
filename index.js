@@ -32,9 +32,9 @@ function renderVideos() {
             height="36"
           />
           <div class="metadata-container">
-            <h3>Video name</h3>
+            <h3>Video ${i}</h3>
             <div class="metadata">
-              <span>Channel name</span>
+              <span>Channel ${i}</span>
               <div class="metadata-line">
                 <span class="metadata-views">100 views</span>
                 <span class="metadata-timestamp">4 months ago</span>
