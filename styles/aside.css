@@ -1,0 +1,35 @@
+.aside {
+  width: 100%;
+  height: 100%;
+  max-width: 240px;
+  padding-right: 16px;
+  background-color: var(--background-secondary);
+  position: fixed;
+  margin-top: var(--header-height);
+}
+
+.aside .material-icons,
+.aside .material-icons-outlined,
+.aside .user-avatar {
+  margin-right: 24px;
+}
+
+.aside .nav .icon-button {
+  padding: 0 24px;
+}
+
+.aside .nav a:hover {
+  background-color: var(--action-hover);
+}
+
+.aside .nav ul {
+  border-bottom: 1px solid var(--action-hover);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.aside .nav ul h3 {
+  text-transform: uppercase;
+  padding: 8px;
+  color: var(--text-secondary);
+}

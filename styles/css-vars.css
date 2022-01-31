@@ -1,21 +1,42 @@
 :root {
   --background-primary: #fff;
+  --background-secondary: #fff;
   --general-background: #fff;
+
   --text-primary: #000;
+  --text-primary-inverse: #fff;
+  --text-secondary: #010;
+
   --input-background: #fff;
   --input-border: #000;
   --search-button-background: #fff;
   --icon-color: #030303;
+  --action-hover: rgba(0, 0, 0, 0.1);
+  --chip-background: rgba(0, 0, 0, 0.1);
+  --chip-border: rgba(0, 0, 0, 0.1);
+
+  --header-height: 56px;
+  --chips-bar-height: 58px;
+  --sidebar-width: 240px;
+  --main-max-width: 1504px;
 }
 
 body[theme='dark'] {
-  --background-primary: rgba(33, 33, 33, 0.98);
+  --background-primary: #181818;
+  --background-secondary: rgba(33, 33, 33, 0.98);
   --general-background: #181818;
+
   --text-primary: #fff;
+  --text-primary-inverse: #030303;
+  --text-secondary: #aaa;
+
   --input-background: hsl(0, 0%, 7%);
   --input-border: hsl(0, 0%, 18.82%);
   --search-button-background: hsla(0, 0%, 100%, 0.08);
   --icon-color: rgba(255, 255, 255, 1);
+  --action-hover: rgba(255, 255, 255, 0.1);
+  --chip-background: rgba(255, 255, 255, 0.1);
+  --chip-border: rgba(255, 255, 255, 0.1);
 }
 
 .material-icons, .material-icons-outlined {

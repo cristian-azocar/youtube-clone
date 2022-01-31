@@ -1,0 +1,128 @@
+.main {
+  width: 100%;
+  margin-top: var(--header-height);
+  margin-left: var(--sidebar-width);
+}
+
+.main .chips-container {
+  height: var(--chips-bar-height);
+}
+
+.main .chips-container ul {
+  display: inline-flex;
+  flex-direction: row;
+  position: fixed;
+  top: var(--header-height);
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--action-hover);
+  border-bottom: 1px solid var(--action-hover);
+  width: 100%;
+  z-index: 2;
+}
+
+.main .chips-container ul li {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  margin: 12px;
+  margin-left: 0px;
+  background-color: var(--chip-background);
+  color: var(--text-primary);
+  border: 1px solid var(--chip-border);
+  padding: 0 12px;
+  height: 32px;
+  min-width: 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.main .chips-container ul li:first-of-type {
+  margin-left: 24px;
+}
+
+.main .chips-container ul li.chip-selected {
+  background-color: var(--text-primary);
+  color: var(--text-primary-inverse);
+}
+
+.main #video-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  max-width: var(--main-max-width);
+  width: 100%;
+  padding: 24px 16px 0 16px;
+  margin: 0 auto;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.video-container .thumbnail-container {
+  position: relative;
+  max-width: 360px;
+}
+
+.video-container .thumbnail-container .time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--background-primary);
+  right: 0;
+  bottom: 0;
+  margin: 4px;
+  padding: 3px 4px;
+  height: 18px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+}
+
+.video-container .thumbnail {
+  height: 100%;
+  max-width: 100%;
+}
+
+.video-container .details {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-container .details img {
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.video-container .details h3 {
+  margin: 12px 0 4px 0;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.video-container .metadata {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-secondary);
+}
+
+.video-container .metadata-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-container .metadata-views::after {
+  content: "•";
+  margin: 0 4px;
+}
