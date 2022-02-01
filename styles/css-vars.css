@@ -17,7 +17,8 @@
 
   --header-height: 56px;
   --chips-bar-height: 58px;
-  --sidebar-width: 240px;
+  --large-sidebar-width: 240px;
+  --mini-sidebar-width: 72px;
   --main-max-width: 1504px;
 }
 

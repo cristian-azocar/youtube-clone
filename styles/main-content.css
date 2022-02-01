@@ -1,7 +1,11 @@
 .main {
   width: 100%;
   margin-top: var(--header-height);
-  margin-left: var(--sidebar-width);
+  margin-left: var(--large-sidebar-width);
+}
+
+body[mini-sidebar-visible] .main {
+  margin-left: var(--mini-sidebar-width);
 }
 
 .main .chips-container {
@@ -48,24 +52,57 @@
 
 .main #video-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 16px;
-  max-width: var(--main-max-width);
   width: 100%;
-  padding: 24px 16px 0 16px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 588px) {
+  .main #video-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px;
+  }
+}
+
+@media only screen and (min-width: 874px) {
+  .main #video-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1128px) {
+  .main #video-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1784px) {
+  .main #video-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .video-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 588px) {
+  .video-container {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 874px) {
+  .video-container {
+    margin-bottom: 40px;
+  }
 }
 
 .video-container .thumbnail-container {
   position: relative;
-  max-width: 360px;
 }
 
 .video-container .thumbnail-container .time {
@@ -95,6 +132,13 @@
 .video-container .details {
   display: flex;
   flex-direction: row;
+  margin: 4px 0px 16px 12px;
+}
+
+@media only screen and (min-width: 588px) {
+  .video-container .details {
+    margin-top: 0px;
+  }
 }
 
 .video-container .details img {
@@ -121,6 +165,7 @@
 .video-container .metadata-line {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .video-container .metadata-views::after {

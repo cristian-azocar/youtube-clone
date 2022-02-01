@@ -1,9 +1,10 @@
 window.addEventListener('load', function() {
+  addSidebarButtonListener();
   renderVideos();
 });
 
 function renderVideos() {
-  const videoList = this.document.getElementById('video-list');
+  const videoList = document.getElementById('video-list');
   let userAvatarId = 1;
   let thumbnailId = 10;
 
@@ -15,11 +16,11 @@ function renderVideos() {
       <article class="video-container">
         <div class="thumbnail-container">
           <img
-            src="https://picsum.photos/id/${thumbnailId}/360/202"
+            src="https://picsum.photos/id/${thumbnailId}/686/386"
             alt="Thumbnail"
             class="thumbnail"
-            width="360"
-            height="202"
+            width="686"
+            height="386"
           />
           <span class="time">10:00</span>
         </div>
@@ -45,4 +46,17 @@ function renderVideos() {
       </article>
   `.trim());
   }
+}
+
+function addSidebarButtonListener() {
+  const sidebarButton = document.getElementById('sidebar-button');
+  const miniSidebarAttribute = 'mini-sidebar-visible';
+
+  sidebarButton.addEventListener('click', function() {
+    if (document.body.hasAttribute(miniSidebarAttribute)) {
+      document.body.removeAttribute(miniSidebarAttribute);
+    } else {
+      document.body.setAttribute(miniSidebarAttribute, '');
+    }
+  });
 }
